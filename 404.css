@@ -1,0 +1,259 @@
+.hastakala-not-found {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: 100px 24px 48px;
+  background: var(--background);
+  color: var(--text);
+}
+
+.hastakala-not-found__preferences {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hastakala-not-found__toggle {
+  display: inline-flex;
+  min-width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--primary);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hastakala-not-found__toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.hastakala-not-found__toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.hastakala-not-found__rtl-toggle span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.hastakala-not-found__toggle:focus-visible,
+.hastakala-not-found__actions a:focus-visible,
+.hastakala-not-found__shop-link:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 4px;
+}
+
+.hastakala-not-found__content {
+  position: relative;
+  z-index: 1;
+  width: min(680px, 100%);
+  text-align: center;
+}
+
+.hastakala-not-found__icon {
+  display: inline-flex;
+  width: 68px;
+  height: 68px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(186, 132, 87, 0.3);
+  border-radius: var(--radius-round);
+  background: rgba(186, 132, 87, 0.08);
+  color: var(--secondary);
+}
+
+.hastakala-not-found__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.hastakala-not-found__eyebrow {
+  margin: 0 0 4px;
+  color: var(--secondary);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.hastakala-not-found__code {
+  margin: 0;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: clamp(5.5rem, 17vw, 10rem);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 0.98;
+}
+
+.hastakala-not-found__title {
+  margin: 14px 0 12px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: clamp(1.55rem, 4vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.hastakala-not-found__title span {
+  color: var(--secondary);
+}
+
+.hastakala-not-found__text {
+  max-width: 520px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.hastakala-not-found__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hastakala-not-found__shop-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.hastakala-not-found__shop-link:hover {
+  color: var(--secondary);
+}
+
+.hastakala-not-found__shop-link svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.25s ease;
+}
+
+.hastakala-not-found__shop-link:hover svg {
+  transform: translateX(3px);
+}
+
+.hastakala-not-found__decoration {
+  position: absolute;
+  z-index: 0;
+  border: 1px solid rgba(186, 132, 87, 0.14);
+  pointer-events: none;
+}
+
+.hastakala-not-found__decoration--one {
+  top: 20%;
+  left: -90px;
+  width: 240px;
+  height: 240px;
+  border-radius: var(--radius-lg);
+  transform: rotate(22deg);
+}
+
+.hastakala-not-found__decoration--two {
+  right: -105px;
+  bottom: 10%;
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius-round);
+}
+
+body.dark-mode .hastakala-not-found__toggle {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--white);
+}
+
+body.dark-mode .hastakala-not-found__code,
+body.dark-mode .hastakala-not-found__title,
+body.dark-mode .hastakala-not-found__shop-link {
+  color: var(--white);
+}
+
+body.dark-mode .hastakala-not-found__title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .hastakala-not-found__text {
+  color: var(--muted);
+}
+
+body.dark-mode .hastakala-not-found__shop-link:hover {
+  color: var(--secondary);
+}
+
+html[dir="rtl"] .hastakala-not-found__preferences {
+  right: auto;
+  left: 24px;
+}
+
+html[dir="rtl"] .hastakala-not-found__shop-link svg {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .hastakala-not-found__shop-link:hover svg {
+  transform: scaleX(-1) translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .hastakala-not-found {
+    padding: 92px 20px 36px;
+  }
+
+  .hastakala-not-found__preferences {
+    top: 16px;
+    right: 16px;
+  }
+
+  html[dir="rtl"] .hastakala-not-found__preferences {
+    right: auto;
+    left: 16px;
+  }
+
+  .hastakala-not-found__text {
+    font-size: 0.9rem;
+  }
+
+  .hastakala-not-found__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hastakala-not-found__actions .btn-primary,
+  .hastakala-not-found__actions .btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hastakala-not-found__toggle,
+  .hastakala-not-found__shop-link,
+  .hastakala-not-found__shop-link svg {
+    transition: none;
+  }
+}

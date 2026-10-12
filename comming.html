@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fcf9f7" />
+    <title>Coming Soon | Hastakala</title>
+
+    <link rel="stylesheet" href="comming.css" />
+    <link rel="stylesheet" href="./main/global.css" />
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./main/main.js" defer></script>
+  </head>
+
+  <body data-root="./">
+    <main class="hastakala-coming-soon">
+      <nav
+        class="hastakala-coming-soon__preferences"
+        aria-label="Display preferences"
+      >
+        <button
+          class="hastakala-coming-soon__toggle"
+          id="darkToggle"
+          type="button"
+          title="Dark Mode"
+          aria-label="Switch to dark mode"
+        >
+          <i data-lucide="moon" aria-hidden="true"></i>
+        </button>
+
+        <button
+          class="hastakala-coming-soon__toggle"
+          id="rtlToggle"
+          type="button"
+          title="Switch to right-to-left layout"
+          aria-label="Switch to right-to-left layout"
+          aria-pressed="false"
+        >
+          <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+        </button>
+      </nav>
+
+      <section
+        class="hastakala-coming-soon__content"
+        aria-labelledby="comingSoonTitle"
+      >
+        <div class="logo hastakala-coming-soon__logo">
+          <a
+            href="./index.html"
+            class="logo-icon-link"
+            aria-label="Hastakala Home"
+          >
+            <img
+              src="./images/logo2.png"
+              alt="Hastakala Logo"
+              class="brand-logo"
+              id="headerLogo"
+            />
+          </a>
+
+          <span class="logo-divider" aria-hidden="true"></span>
+
+          <a href="./index.html" class="brand-content">
+            <h1 class="brand-name">
+              <span class="thread">HASTA</span><span class="mark">KALA</span>
+            </h1>
+            <span class="subtitle-text">HANDICRAFT &amp; HOME DECOR</span>
+          </a>
+        </div>
+
+        <div class="hastakala-coming-soon__eyebrow">
+          <span
+            class="hastakala-coming-soon__eyebrow-line"
+            aria-hidden="true"
+          ></span>
+          <span>MADE WITH CARE, COMING SOON</span>
+          <span
+            class="hastakala-coming-soon__eyebrow-line"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-coming-soon__title" id="comingSoonTitle">
+          A more thoughtful
+          <span>world of craft is coming.</span>
+        </h2>
+
+        <p class="hastakala-coming-soon__text">
+          We’re creating a space to discover handmade pieces, meet the artisans
+          behind them, and bring meaningful craft into your home. Our new
+          experience will be ready soon.
+        </p>
+
+        <div class="hastakala-coming-soon__status">
+          <span class="hastakala-coming-soon__status-icon" aria-hidden="true">
+            <i data-lucide="sparkles"></i>
+          </span>
+          <span>Thoughtfully made. Almost ready.</span>
+        </div>
+
+        <div class="hastakala-coming-soon__details">
+          <div class="hastakala-coming-soon__detail">
+            <span class="hastakala-coming-soon__detail-icon" aria-hidden="true">
+              <i data-lucide="hand"></i>
+            </span>
+            <span>Made by hand</span>
+          </div>
+
+          <span
+            class="hastakala-coming-soon__detail-divider"
+            aria-hidden="true"
+          ></span>
+
+          <div class="hastakala-coming-soon__detail">
+            <span class="hastakala-coming-soon__detail-icon" aria-hidden="true">
+              <i data-lucide="leaf"></i>
+            </span>
+            <span>Rooted in craft</span>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="hastakala-coming-soon__decoration hastakala-coming-soon__decoration--one"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="hastakala-coming-soon__decoration hastakala-coming-soon__decoration--two"
+        aria-hidden="true"
+      ></div>
+    </main>
+  </body>
+</html>

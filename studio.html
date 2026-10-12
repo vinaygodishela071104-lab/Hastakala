@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hastakala – Handicraft & Home Decor Store featuring artisanal collections, curated products, and custom design services."
+    />
+    <meta
+      name="keywords"
+      content="Hastakala, handicraft, home decor, artisan, handmade, custom design, home styling"
+    />
+    <meta name="author" content="Hastakala" />
+    <meta name="theme-color" content="#06273A" />
+    <title>Hastakala | Handicraft & Home Decor | Studio Page</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="studio.css" />
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+  </head>
+
+  <body data-root="./">
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html" class="logo-icon-link" aria-label="Hastakala Home">
+          <img
+            src="./images/logo2.png"
+            alt="Hastakala Logo"
+            class="brand-logo"
+            id="headerLogo"
+          />
+        </a>
+
+        <span class="logo-divider"></span>
+
+        <a href="index.html" class="brand-content">
+          <h1 class="brand-name">
+            <span class="thread">HASTA</span><span class="mark">KALA</span>
+          </h1>
+
+          <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+        </a>
+      </div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="dropdown">
+            <a
+              href="index.html"
+              class="dropdown-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html">Home 1</a>
+              </li>
+
+              <li>
+                <a href="home2.html">Home 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+
+          <li>
+            <a href="studio.html">Studio</a>
+          </li>
+
+          <li>
+            <a href="artisans.html">Artisans</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-quote">
+          <a href="contact.html#contact-form" class="btn-primary">
+            <i data-lucide="message-circle"></i>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="buttons">
+        <button
+          class="icon-btn rtl-btn"
+          id="rtlToggle"
+          type="button"
+          title="RTL Mode"
+          aria-label="Toggle RTL mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          class="icon-btn dark-btn"
+          id="darkToggle"
+          type="button"
+          title="Dark Mode"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <a href="contact.html#contact-form" class="btn-primary desktop-quote">
+          <i data-lucide="message-circle"></i>
+          <span>Get in Touch</span>
+        </a>
+
+        <button
+          class="icon-btn menu-btn"
+          id="menuToggle"
+          type="button"
+          title="Menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+    <section
+      class="hastakala-studio-hero"
+      id="studio-hero"
+      aria-labelledby="studioHeroTitle"
+    >
+      <div class="hastakala-studio-hero__overlay" aria-hidden="true"></div>
+
+      <div class="hastakala-studio-hero__inner">
+        <div class="hastakala-hero__eyebrow hastakala-studio-hero__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">THE STUDIO</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h1 class="hastakala-studio-hero__title" id="studioHeroTitle">
+          Where natural materials
+          <span>become quiet objects.</span>
+        </h1>
+
+        <p class="hastakala-studio-hero__text">
+          A small studio shaped by handwork, natural textures, and slow making.
+          Every piece begins with a material and ends with a story for your
+          home.
+        </p>
+
+        <div class="hastakala-studio-hero__actions">
+          <a class="btn-primary" href="#craft-process">
+            Explore the process
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="btn-secondary" href="#visit-studio">
+            Visit the studio
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-craft-philosophy"
+      id="craft-philosophy"
+      aria-labelledby="craftPhilosophyTitle"
+    >
+      <div class="hastakala-craft-philosophy__texture" aria-hidden="true"></div>
+
+      <div class="hastakala-craft-philosophy__inner">
+        <div
+          class="hastakala-hero__eyebrow hastakala-craft-philosophy__eyebrow"
+        >
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">CRAFT PHILOSOPHY</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-craft-philosophy__title" id="craftPhilosophyTitle">
+          Made slowly,
+          <span>with intention.</span>
+        </h2>
+
+        <p class="hastakala-craft-philosophy__manifesto">
+          We believe the objects in a home should carry a sense of origin. Our
+          work begins with natural materials and continues through patient,
+          hands-on making—creating pieces that feel warm, useful, and quietly
+          personal.
+        </p>
+
+        <div class="hastakala-craft-philosophy__values">
+          <div class="hastakala-craft-philosophy__value">
+            <div class="hastakala-craft-philosophy__value-icon">
+              <i data-lucide="hand" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="hastakala-craft-philosophy__value-title">Handmade</h3>
+
+            <p class="hastakala-craft-philosophy__value-text">
+              Each piece is shaped, finished, and checked by hand, retaining the
+              subtle character of its maker.
+            </p>
+          </div>
+
+          <div class="hastakala-craft-philosophy__value">
+            <div class="hastakala-craft-philosophy__value-icon">
+              <i data-lucide="leaf" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="hastakala-craft-philosophy__value-title">Natural</h3>
+
+            <p class="hastakala-craft-philosophy__value-text">
+              We work with clay, wood, metal, and natural fibres chosen for
+              their texture, durability, and honest character.
+            </p>
+          </div>
+
+          <div class="hastakala-craft-philosophy__value">
+            <div class="hastakala-craft-philosophy__value-icon">
+              <i data-lucide="recycle" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="hastakala-craft-philosophy__value-title">Considered</h3>
+
+            <p class="hastakala-craft-philosophy__value-text">
+              Small batches and thoughtful production help reduce waste while
+              keeping every collection meaningful.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-craft-process"
+      id="craft-process"
+      aria-labelledby="craftProcessTitle"
+    >
+      <div class="hastakala-craft-process__inner">
+        <div class="hastakala-hero__eyebrow hastakala-craft-process__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text"
+            >FROM MATERIAL TO MAKING</span
+          >
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-craft-process__title" id="craftProcessTitle">
+          The journey of
+          <span>every piece.</span>
+        </h2>
+
+        <p class="hastakala-craft-process__text">
+          Each object moves through a considered process—from carefully chosen
+          materials to the final moment it is prepared for your home.
+        </p>
+
+        <div class="hastakala-craft-process__timeline">
+          <div class="hastakala-craft-process__step">
+            <div class="hastakala-craft-process__marker">
+              <i data-lucide="mountain" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-craft-process__details">
+              <p class="hastakala-craft-process__step-number">01</p>
+              <h3 class="hastakala-craft-process__step-title">
+                Material Sourcing
+              </h3>
+              <p class="hastakala-craft-process__step-text">
+                Natural clay, wood, metal, and fibres are selected for their
+                texture, durability, and honest character.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-craft-process__step">
+            <div class="hastakala-craft-process__marker">
+              <i data-lucide="hand" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-craft-process__details">
+              <p class="hastakala-craft-process__step-number">02</p>
+              <h3 class="hastakala-craft-process__step-title">Hand-Shaping</h3>
+              <p class="hastakala-craft-process__step-text">
+                Artisans shape each form by hand, allowing subtle variations
+                that make every finished piece unique.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-craft-process__step">
+            <div class="hastakala-craft-process__marker">
+              <i data-lucide="brush" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-craft-process__details">
+              <p class="hastakala-craft-process__step-number">03</p>
+              <h3 class="hastakala-craft-process__step-title">Finishing</h3>
+              <p class="hastakala-craft-process__step-text">
+                Surfaces are refined, textured, glazed, or polished to reveal
+                the natural quality of each material.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-craft-process__step">
+            <div class="hastakala-craft-process__marker">
+              <i data-lucide="badge-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-craft-process__details">
+              <p class="hastakala-craft-process__step-number">04</p>
+              <h3 class="hastakala-craft-process__step-title">Quality Check</h3>
+              <p class="hastakala-craft-process__step-text">
+                Every piece is carefully inspected for balance, strength,
+                finish, and overall quality of craftsmanship.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-craft-process__step">
+            <div class="hastakala-craft-process__marker">
+              <i data-lucide="package-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-craft-process__details">
+              <p class="hastakala-craft-process__step-number">05</p>
+              <h3 class="hastakala-craft-process__step-title">Packing</h3>
+              <p class="hastakala-craft-process__step-text">
+                Finished pieces are wrapped carefully and prepared for a safe
+                journey from the studio to your home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-studio-gallery"
+      id="studio-gallery"
+      aria-labelledby="studioGalleryTitle"
+    >
+      <div class="hastakala-studio-gallery__inner">
+        <div class="hastakala-hero__eyebrow hastakala-studio-gallery__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">STUDIO IN FOCUS</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-studio-gallery__title" id="studioGalleryTitle">
+          Moments from
+          <span>the making.</span>
+        </h2>
+
+        <p class="hastakala-studio-gallery__text">
+          A closer look at the textures, tools, hands, and quiet corners that
+          shape every piece made in the studio.
+        </p>
+
+        <div class="hastakala-studio-gallery__grid">
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-1.jpg"
+              alt="Maker shaping clay at a studio worktable"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Clay at work</span>
+            </figcaption>
+          </figure>
+
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-2.jpg"
+              alt="Close view of clay texture and handmade tools in the studio"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Raw textures</span>
+            </figcaption>
+          </figure>
+
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-3.jpg"
+              alt="Hands finishing a small handmade ceramic object"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Finishing touches</span>
+            </figcaption>
+          </figure>
+
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-4.jpg"
+              alt="Finished handmade ceramic pieces arranged on studio shelves"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Finished forms</span>
+            </figcaption>
+          </figure>
+
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-5.jpg"
+              alt="Warm studio corner with natural light and works in progress"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Studio corners</span>
+            </figcaption>
+          </figure>
+
+          <figure class="hastakala-studio-gallery__item">
+            <img
+              class="hastakala-studio-gallery__image"
+              src="./images/studio-gallery-6.jpg"
+              alt="Detail of handmade tools and materials used in the studio"
+              loading="lazy"
+            />
+
+            <figcaption class="hastakala-studio-gallery__caption">
+              <span>Tools of trade</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-custom-commissions"
+      id="custom-commissions"
+      aria-labelledby="customCommissionsTitle"
+    >
+      <div class="hastakala-custom-commissions__inner">
+        <div class="hastakala-custom-commissions__grid">
+          <div class="hastakala-custom-commissions__content">
+            <div
+              class="hastakala-hero__eyebrow hastakala-custom-commissions__eyebrow"
+            >
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+                aria-hidden="true"
+              ></span>
+              <span class="hastakala-hero__eyebrow-text"
+                >CUSTOM COMMISSIONS</span
+              >
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <h2
+              class="hastakala-custom-commissions__title"
+              id="customCommissionsTitle"
+            >
+              Create something
+              <span>made for your space.</span>
+            </h2>
+
+            <p class="hastakala-custom-commissions__text">
+              From a bespoke ceramic set to a tailored décor piece for a home,
+              café, or gift, we welcome thoughtful custom requests. Share your
+              idea, preferred materials, and timeline, and the studio will help
+              bring it to life.
+            </p>
+
+            <ul class="hastakala-custom-commissions__list">
+              <li>
+                <i data-lucide="palette" aria-hidden="true"></i>
+                <span>Bespoke colours, forms, and finishes</span>
+              </li>
+              <li>
+                <i data-lucide="home" aria-hidden="true"></i>
+                <span>Custom pieces for homes and interiors</span>
+              </li>
+              <li>
+                <i data-lucide="gift" aria-hidden="true"></i>
+                <span>Personal, corporate, and festive gifting</span>
+              </li>
+            </ul>
+
+            <div class="hastakala-custom-commissions__actions">
+              <a class="btn-primary" href="./contact.html">
+                Start a commission
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a class="btn-secondary" href="./contact.html">
+                View enquiry details
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hastakala-custom-commissions__media">
+            <div class="hastakala-custom-commissions__image-frame">
+              <img
+                class="hastakala-custom-commissions__image"
+                src="./images/custom-commissions.jpg"
+                alt="Maker shaping a custom ceramic piece in a warm studio setting"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="hastakala-custom-commissions__status-card">
+              <div class="hastakala-custom-commissions__status-icon">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+              </div>
+
+              <div class="hastakala-custom-commissions__status-details">
+                <p class="hastakala-custom-commissions__status-label">
+                  Custom orders open
+                </p>
+                <p class="hastakala-custom-commissions__status-text">
+                  Limited commissions each month
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="hastakala-custom-commissions__accent-shape"
+              aria-hidden="true"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-visit-studio"
+      id="visit-studio"
+      aria-labelledby="visitStudioTitle"
+    >
+      <div class="hastakala-visit-studio__inner">
+        <div class="hastakala-visit-studio__header">
+          <div
+            class="hastakala-hero__eyebrow hastakala-visit-studio__header-eyebrow"
+          >
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">VISIT THE STUDIO</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2
+            class="hastakala-visit-studio__header-title"
+            id="visitStudioTitle"
+          >
+            Find your way to
+            <span>the studio.</span>
+          </h2>
+
+          <p class="hastakala-visit-studio__header-text">
+            Explore the collection, meet the makers, and plan a visit to see
+            where every handmade piece begins.
+          </p>
+        </div>
+
+        <div class="hastakala-visit-studio__top">
+          <div class="hastakala-visit-studio__map-wrap">
+            <iframe
+              class="hastakala-visit-studio__map hastakala-visit-studio__map--standard"
+              id="studioStandardMap"
+              src="https://www.google.com/maps?q=Indiranagar,Bengaluru,Karnataka&output=embed"
+              title="Studio location on Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="hastakala-visit-studio__map hastakala-visit-studio__map--satellite"
+              id="studioSatelliteMap"
+              src="https://www.google.com/maps?q=Indiranagar,Bengaluru,Karnataka&output=embed"
+              title="Studio location satellite view"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              hidden
+            ></iframe>
+
+            <div class="hastakala-visit-studio__map-controls">
+              <button
+                class="hastakala-visit-studio__map-toggle is-active"
+                type="button"
+                data-map-view="standard"
+              >
+                <i data-lucide="map" aria-hidden="true"></i>
+                <span>Map</span>
+              </button>
+
+              <button
+                class="hastakala-visit-studio__map-toggle"
+                type="button"
+                data-map-view="satellite"
+              >
+                <i data-lucide="satellite" aria-hidden="true"></i>
+                <span>Satellite</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hastakala-visit-studio__content">
+            <div
+              class="hastakala-hero__eyebrow hastakala-visit-studio__eyebrow"
+            >
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+                aria-hidden="true"
+              ></span>
+              <span class="hastakala-hero__eyebrow-text">STUDIO DETAILS</span>
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <h3 class="hastakala-visit-studio__title">
+              See where every
+              <span>piece begins.</span>
+            </h3>
+
+            <div class="hastakala-visit-studio__address">
+              <div class="hastakala-visit-studio__address-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </div>
+
+              <div class="hastakala-visit-studio__address-content">
+                <p class="hastakala-visit-studio__address-label">
+                  Studio address
+                </p>
+                <p
+                  class="hastakala-visit-studio__address-text"
+                  id="studioAddress"
+                >
+                  12 Craft Lane, Indiranagar, Bengaluru, Karnataka 560038
+                </p>
+              </div>
+
+              <button
+                class="hastakala-visit-studio__copy-button"
+                type="button"
+                id="copyAddressButton"
+              >
+                <i data-lucide="copy" aria-hidden="true"></i>
+                <span id="copyAddressText">Copy</span>
+              </button>
+            </div>
+
+            <div class="hastakala-visit-studio__quick-details">
+              <button
+                class="hastakala-visit-studio__quick-detail is-active"
+                type="button"
+                data-detail="hours"
+              >
+                <i data-lucide="clock" aria-hidden="true"></i>
+                <span>Visiting hours</span>
+              </button>
+
+              <button
+                class="hastakala-visit-studio__quick-detail"
+                type="button"
+                data-detail="appointment"
+              >
+                <i data-lucide="calendar-check" aria-hidden="true"></i>
+                <span>Appointments</span>
+              </button>
+            </div>
+
+            <div class="hastakala-visit-studio__detail-panel">
+              <div
+                class="hastakala-visit-studio__detail-content is-active"
+                id="detail-hours"
+              >
+                <p class="hastakala-visit-studio__detail-title">
+                  Monday to Saturday
+                </p>
+                <p class="hastakala-visit-studio__detail-text">
+                  10:00 AM – 6:00 PM IST. Closed on Sundays and public holidays.
+                </p>
+              </div>
+
+              <div
+                class="hastakala-visit-studio__detail-content"
+                id="detail-appointment"
+                hidden
+              >
+                <p class="hastakala-visit-studio__detail-title">
+                  Appointments recommended
+                </p>
+                <p class="hastakala-visit-studio__detail-text">
+                  Walk-ins are welcome. Book ahead for custom consultations and
+                  collection viewings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hastakala-visit-studio__cta">
+          <div class="hastakala-visit-studio__cta-icon">
+            <i data-lucide="store" aria-hidden="true"></i>
+          </div>
+
+          <div class="hastakala-visit-studio__cta-content">
+            <p class="hastakala-visit-studio__cta-title">
+              Plan a <span>studio visit</span>
+            </p>
+
+            <p class="hastakala-visit-studio__cta-text">
+              Explore the latest handmade collection, meet the makers, and see
+              the materials and processes behind every piece. Appointments are
+              recommended for custom consultations and bulk enquiries.
+            </p>
+
+            <ul class="hastakala-visit-studio__cta-points">
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Collection viewing</span>
+              </li>
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Custom consultations</span>
+              </li>
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Bulk & gifting enquiries</span>
+              </li>
+            </ul>
+
+            <div class="hastakala-visit-studio__cta-actions">
+              <a
+                class="btn-primary"
+                href="https://www.google.com/maps/search/?api=1&query=12+Craft+Lane+Indiranagar+Bengaluru"
+                target="_blank"
+                rel="noopener"
+              >
+                Get directions
+                <i data-lucide="navigation" aria-hidden="true"></i>
+              </a>
+
+              <a class="btn-secondary" href="./contact.html">
+                Book a visit
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <a
+              href="index.html"
+              class="logo-icon-link"
+              aria-label="Hastakala Home"
+            >
+              <img
+                src="./images/logo.png"
+                alt="Hastakala Logo"
+                class="brand-logo"
+                id="footerLogo"
+              />
+            </a>
+
+            <span class="logo-divider footer-logo-divider"></span>
+
+            <a href="index.html" class="brand-content footer-branding">
+              <h2 class="brand-name">
+                <span class="thread">HASTA</span><span class="mark">KALA</span>
+              </h2>
+
+              <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+            </a>
+          </div>
+
+          <p class="footer-about">
+            Hastakala celebrates the art of handmade living with curated
+            handicrafts and home decor. Each piece tells a story of skill,
+            tradition, and thoughtful design for modern spaces.
+          </p>
+
+          <div class="social">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Studio</a>
+            </li>
+
+            <li>
+              <a href="artisans.html">Artisans</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Shop</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="products.html">Handicrafts</a>
+            </li>
+
+            <li>
+              <a href="products.html">Home Decor</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Room</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Material</a>
+            </li>
+
+            <li>
+              <a href="products.html">New Arrivals</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Studio &amp; Services</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="studio.html">Custom Design Studio</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Interior Consultation</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Bulk &amp; Corporate Gifting</a>
+            </li>
+
+            <li>
+              <a href="404.html">404 page </a>
+            </li>
+
+            <li>
+              <a href="comming.html">upcomming</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+
+          <ul class="contact">
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </span>
+
+              <span>Hyderabad, Telangana</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="phone" aria-hidden="true"></i>
+              </span>
+
+              <span>+91 98765 43210</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="mail" aria-hidden="true"></i>
+              </span>
+
+              <span>hello@hastakala.com</span>
+            </li>
+          </ul>
+
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
+            <span>Request a Quote</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Hastakala. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+
+          <a href="terms.html">Terms &amp; Conditions</a>
+
+          <a href="#" class="top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="./main/main.js"></script>
+ 
+  </body>
+</html>

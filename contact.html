@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hastakala – Handicraft & Home Decor Store featuring artisanal collections, curated products, and custom design services."
+    />
+    <meta
+      name="keywords"
+      content="Hastakala, handicraft, home decor, artisan, handmade, custom design, home styling"
+    />
+    <meta name="author" content="Hastakala" />
+    <meta name="theme-color" content="#06273A" />
+    <title>Hastakala | Handicraft & Home Decor | Contact Page</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+  </head>
+
+  <body data-root="./">
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html" class="logo-icon-link" aria-label="Hastakala Home">
+          <img
+            src="./images/logo2.png"
+            alt="Hastakala Logo"
+            class="brand-logo"
+            id="headerLogo"
+          />
+        </a>
+
+        <span class="logo-divider"></span>
+
+        <a href="index.html" class="brand-content">
+          <h1 class="brand-name">
+            <span class="thread">HASTA</span><span class="mark">KALA</span>
+          </h1>
+
+          <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+        </a>
+      </div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="dropdown">
+            <a
+              href="index.html"
+              class="dropdown-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html">Home 1</a>
+              </li>
+
+              <li>
+                <a href="home2.html">Home 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+
+          <li>
+            <a href="studio.html">Studio</a>
+          </li>
+
+          <li>
+            <a href="artisans.html">Artisans</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-quote">
+          <a href="contact.html#contact-form" class="btn-primary">
+            <i data-lucide="message-circle"></i>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="buttons">
+        <button
+          class="icon-btn rtl-btn"
+          id="rtlToggle"
+          type="button"
+          title="RTL Mode"
+          aria-label="Toggle RTL mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          class="icon-btn dark-btn"
+          id="darkToggle"
+          type="button"
+          title="Dark Mode"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <a href="contact.html#contact-form" class="btn-primary desktop-quote">
+          <i data-lucide="message-circle"></i>
+          <span>Get in Touch</span>
+        </a>
+
+        <button
+          class="icon-btn menu-btn"
+          id="menuToggle"
+          type="button"
+          title="Menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+    <section
+      class="hastakala-contact-hero"
+      id="contact-hero"
+      aria-labelledby="contactHeroTitle"
+    >
+      <div class="hastakala-contact-hero__overlay" aria-hidden="true"></div>
+
+      <div class="hastakala-contact-hero__inner">
+        <div class="hastakala-hero__eyebrow hastakala-contact-hero__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">GET IN TOUCH</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h1 class="hastakala-contact-hero__title" id="contactHeroTitle">
+          Let’s create something
+          <span>meaningful.</span>
+        </h1>
+
+        <p class="hastakala-contact-hero__text">
+          Have a question about a piece, a custom idea, or a collaboration? We
+          would love to hear from you.
+        </p>
+
+        <div class="hastakala-contact-hero__actions">
+          <a class="btn-primary" href="#contact-form">
+            Send an enquiry
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="btn-secondary" href="mailto:hello@hastakala.com">
+            Email the studio
+            <i data-lucide="mail" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="hastakala-contact-details"
+      id="contact-details"
+      aria-labelledby="contactDetailsTitle"
+    >
+      <div class="hastakala-contact-details__inner">
+        <div class="hastakala-hero__eyebrow hastakala-contact-details__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">CONTACT DETAILS</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-contact-details__title" id="contactDetailsTitle">
+          We are here to
+          <span>help you.</span>
+        </h2>
+
+        <p class="hastakala-contact-details__text">
+          Reach our studio for product enquiries, custom commissions, order
+          support, or to arrange a personal visit.
+        </p>
+
+        <div class="hastakala-contact-details__grid">
+          <article class="hastakala-contact-details__card">
+            <span class="hastakala-contact-details__icon">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </span>
+
+            <div class="hastakala-contact-details__content">
+              <p class="hastakala-contact-details__label">EMAIL</p>
+              <p class="hastakala-contact-details__value">
+                hello@hastakala.com
+              </p>
+              <p class="hastakala-contact-details__note">
+                Questions about products, orders, or custom designs? We're happy
+                to help.
+              </p>
+            </div>
+
+            <a
+              class="hastakala-contact-details__link"
+              href="mailto:hello@hastakala.com"
+            >
+              Send email
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="hastakala-contact-details__card">
+            <span class="hastakala-contact-details__icon">
+              <i data-lucide="phone" aria-hidden="true"></i>
+            </span>
+
+            <div class="hastakala-contact-details__content">
+              <p class="hastakala-contact-details__label">PHONE</p>
+              <p class="hastakala-contact-details__value">+91 12345 67899</p>
+              <p class="hastakala-contact-details__note">
+                Contact our studio for product enquiries, order updates, or
+                appointments.
+              </p>
+            </div>
+
+            <a class="hastakala-contact-details__link" href="tel:+919876543210">
+              Call now
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="hastakala-contact-details__card">
+            <span class="hastakala-contact-details__icon">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+            </span>
+
+            <div class="hastakala-contact-details__content">
+              <p class="hastakala-contact-details__label">STUDIO</p>
+              <p class="hastakala-contact-details__value">
+                24 Craft Lane, Indiranagar
+              </p>
+              <p class="hastakala-contact-details__note">
+                Explore handmade décor, natural materials, and meet our skilled
+                artisans.
+              </p>
+            </div>
+
+            <a
+              class="hastakala-contact-details__link"
+              href="https://www.google.com/maps/search/?api=1&query=24+Craft+Lane+Indiranagar+Bengaluru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get directions
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="hastakala-contact-details__card">
+            <span class="hastakala-contact-details__icon">
+              <i data-lucide="clock" aria-hidden="true"></i>
+            </span>
+
+            <div class="hastakala-contact-details__content">
+              <p class="hastakala-contact-details__label">WORKING HOURS</p>
+              <p class="hastakala-contact-details__value">Monday to Saturday</p>
+              <p class="hastakala-contact-details__note">
+                Open 10:00 AM–6:30 PM, Monday to Saturday. Closed on Sundays.
+              </p>
+            </div>
+
+            <a class="hastakala-contact-details__link" href="#contact-form">
+              Plan a visit
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-contact-form"
+      id="contact-form"
+      aria-labelledby="contactFormTitle"
+    >
+      <div class="hastakala-contact-form__inner">
+        <div class="hastakala-contact-form__content">
+          <div class="hastakala-hero__eyebrow hastakala-contact-form__eyebrow">
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">SEND AN ENQUIRY</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2 class="hastakala-contact-form__title" id="contactFormTitle">
+            Tell us about
+            <span>your idea.</span>
+          </h2>
+
+          <p class="hastakala-contact-form__text">
+            Whether you have a question about a handmade piece, need support
+            with an order, or want to discuss a custom commission, share the
+            details below. Our team will review your enquiry and respond within
+            1–2 working days.
+          </p>
+
+          <ul class="hastakala-contact-form__points">
+            <li>
+              <span class="hastakala-contact-form__point-icon">
+                <i data-lucide="check" aria-hidden="true"></i>
+              </span>
+              Product availability and order support
+            </li>
+
+            <li>
+              <span class="hastakala-contact-form__point-icon">
+                <i data-lucide="check" aria-hidden="true"></i>
+              </span>
+              Custom commissions and material preferences
+            </li>
+
+            <li>
+              <span class="hastakala-contact-form__point-icon">
+                <i data-lucide="check" aria-hidden="true"></i>
+              </span>
+              Collaboration and wholesale enquiries
+            </li>
+
+            <li>
+              <span class="hastakala-contact-form__point-icon">
+                <i data-lucide="check" aria-hidden="true"></i>
+              </span>
+              Studio visits and artisan appointments
+            </li>
+          </ul>
+
+          <div class="hastakala-contact-form__support">
+            <p class="hastakala-contact-form__support-label">
+              Need urgent help?
+            </p>
+            <p class="hastakala-contact-form__support-text">
+              Email
+              <a href="mailto:hello@hastakala.com">hello@hastakala.com</a>
+              or call
+              <a href="tel:+919876543210">+91 98765 43210</a>
+              during studio working hours.
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="hastakala-contact-form__form"
+          id="contactEnquiryForm"
+          action="#"
+          method="post"
+          novalidate
+        >
+          <div class="hastakala-contact-form__row">
+            <div class="hastakala-contact-form__field">
+              <label for="contactName">Full name</label>
+              <input
+                id="contactName"
+                name="name"
+                type="text"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="hastakala-contact-form__field">
+              <label for="contactEmail">Email address</label>
+              <input
+                id="contactEmail"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="hastakala-contact-form__row">
+            <div class="hastakala-contact-form__field">
+              <label for="contactPhone">Phone number</label>
+              <input
+                id="contactPhone"
+                name="phone"
+                type="tel"
+                placeholder="+91 00000 00000"
+                autocomplete="tel"
+                required
+              />
+            </div>
+
+            <div class="hastakala-contact-form__field">
+              <label for="contactEnquiryType">Enquiry type</label>
+              <select id="contactEnquiryType" name="enquiryType" required>
+                <option value="" selected disabled>
+                  Select an enquiry type
+                </option>
+                <option value="product">Product enquiry</option>
+                <option value="order">Order support</option>
+                <option value="custom">Custom commission</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="wholesale">Wholesale enquiry</option>
+                <option value="studio">Studio visit</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="hastakala-contact-form__row">
+            <div class="hastakala-contact-form__field">
+              <label for="contactSubject">Subject</label>
+              <input
+                id="contactSubject"
+                name="subject"
+                type="text"
+                placeholder="Write a short subject"
+                required
+              />
+            </div>
+
+            <div class="hastakala-contact-form__field">
+              <label for="contactBudget">Preferred budget</label>
+              <select id="contactBudget" name="budget">
+                <option value="" selected disabled>
+                  Select a budget range
+                </option>
+                <option value="under-5000">Under ₹5,000</option>
+                <option value="5000-15000">₹5,000 – ₹15,000</option>
+                <option value="15000-30000">₹15,000 – ₹30,000</option>
+                <option value="above-30000">Above ₹30,000</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="hastakala-contact-form__row">
+            <div class="hastakala-contact-form__field">
+              <label for="contactDate">Preferred completion date</label>
+              <input id="contactDate" name="preferredDate" type="date" />
+            </div>
+
+            <div class="hastakala-contact-form__field">
+              <label for="contactLocation">Delivery location</label>
+              <input
+                id="contactLocation"
+                name="location"
+                type="text"
+                placeholder="City, state, or country"
+              />
+            </div>
+          </div>
+
+          <div class="hastakala-contact-form__field">
+            <label for="contactMessage">Message</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="7"
+              placeholder="Tell us more about your enquiry, including preferred materials, colours, dimensions, quantity, timeline, or any reference images."
+              required
+            ></textarea>
+          </div>
+
+          <div class="hastakala-contact-form__checkbox">
+            <input
+              id="contactConsent"
+              name="consent"
+              type="checkbox"
+              required
+            />
+            <label for="contactConsent">
+              I agree to be contacted about my enquiry.
+            </label>
+          </div>
+
+          <button
+            class="btn-primary hastakala-contact-form__submit"
+            type="submit"
+          >
+            Send enquiry
+            <i data-lucide="send" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="hastakala-contact-form__success"
+            id="contactFormSuccess"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Your enquiry has been sent. We will get back to you soon.
+          </p>
+
+          <p class="hastakala-contact-form__privacy">
+            Your details will only be used to respond to your enquiry.
+          </p>
+        </form>
+      </div>
+    </section>
+    <section
+      class="hastakala-visit-studio"
+      id="visit-studio"
+      aria-labelledby="visitStudioTitle"
+    >
+      <div class="hastakala-visit-studio__inner">
+        <div class="hastakala-visit-studio__content">
+          <div class="hastakala-hero__eyebrow hastakala-visit-studio__eyebrow">
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">VISIT THE STUDIO</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2 class="hastakala-visit-studio__title" id="visitStudioTitle">
+            Experience the studio
+            <span>in person.</span>
+          </h2>
+
+          <p class="hastakala-visit-studio__text">
+            Visit our Bengaluru studio to explore handmade collections, meet the
+            artisans, and see the materials, tools, and processes behind each
+            piece.
+          </p>
+
+          <div class="hastakala-visit-studio__details">
+            <div class="hastakala-visit-studio__detail">
+              <span class="hastakala-visit-studio__detail-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </span>
+
+              <div>
+                <p class="hastakala-visit-studio__detail-label">
+                  Studio address
+                </p>
+                <p class="hastakala-visit-studio__detail-text">
+                  24 Craft Lane, Indiranagar, Bengaluru, Karnataka 560038, India
+                </p>
+              </div>
+            </div>
+
+            <div class="hastakala-visit-studio__detail">
+              <span class="hastakala-visit-studio__detail-icon">
+                <i data-lucide="navigation" aria-hidden="true"></i>
+              </span>
+
+              <div>
+                <p class="hastakala-visit-studio__detail-label">Directions</p>
+                <p class="hastakala-visit-studio__detail-text">
+                  The studio is located near Indiranagar Metro Station.
+                </p>
+              </div>
+            </div>
+
+            <div class="hastakala-visit-studio__detail">
+              <span class="hastakala-visit-studio__detail-icon">
+                <i data-lucide="users" aria-hidden="true"></i>
+              </span>
+
+              <div>
+                <p class="hastakala-visit-studio__detail-label">
+                  Studio visits
+                </p>
+                <p class="hastakala-visit-studio__detail-text">
+                  Walk-ins are welcome. For group visits, workshops, or artisan
+                  appointments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hastakala-visit-studio__actions">
+            <a
+              class="btn-primary"
+              href="https://maps.google.com"
+              target="_blank"
+              rel="noopener"
+            >
+              Get directions
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a class="btn-secondary" href="#contact-form">
+              Plan a visit
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hastakala-visit-studio__media">
+          <div class="hastakala-visit-studio__map-frame">
+            <iframe
+              class="hastakala-visit-studio__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.84376259789!2d77.61761189553896!3d12.973100860534267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1791727473303!5m2!1sen!2sin"
+              title="Hastakala Studio location map"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-support-faq"
+      id="support-faq"
+      aria-labelledby="supportFaqTitle"
+    >
+      <div class="hastakala-support-faq__inner">
+        <div class="hastakala-support-faq__content">
+          <div class="hastakala-hero__eyebrow hastakala-support-faq__eyebrow">
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">SUPPORT & FAQ</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2 class="hastakala-support-faq__title" id="supportFaqTitle">
+            Need help with
+            <span>your enquiry?</span>
+          </h2>
+
+          <p class="hastakala-support-faq__text">
+            Find quick answers about orders, shipping, returns, custom work, and
+            collaborations. If you cannot find what you need, our team is here
+            to help.
+          </p>
+
+          <div class="hastakala-support-faq__cta">
+            <span class="hastakala-support-faq__cta-icon">
+              <i data-lucide="headset" aria-hidden="true"></i>
+            </span>
+
+            <p class="hastakala-support-faq__cta-title">
+              Still need assistance?
+            </p>
+
+            <p class="hastakala-support-faq__cta-text">
+              Send us an enquiry and our team will get back to you within 1–2
+              working days.
+            </p>
+
+            <a class="btn-primary" href="#contact-form">
+              Contact support
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hastakala-support-faq__accordion" id="supportFaqAccordion">
+          <details class="hastakala-support-faq__item" open>
+            <summary class="hastakala-support-faq__question">
+              <span>How can I track my order?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                Once your order is dispatched, you will receive a confirmation
+                email with a tracking link. You can also contact us with your
+                order number for an update.
+              </p>
+            </div>
+          </details>
+
+          <details class="hastakala-support-faq__item">
+            <summary class="hastakala-support-faq__question">
+              <span>Do you ship across India?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                Yes, we ship across India. Shipping charges and delivery time
+                may vary based on your location, product size, and the artisan’s
+                making process.
+              </p>
+            </div>
+          </details>
+
+          <details class="hastakala-support-faq__item">
+            <summary class="hastakala-support-faq__question">
+              <span>Can I return or exchange a handmade piece?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                Because many pieces are handmade or made to order, return and
+                exchange options may vary by product. Please contact us within
+                48 hours of delivery if your item arrives damaged or incorrect.
+              </p>
+            </div>
+          </details>
+
+          <details class="hastakala-support-faq__item">
+            <summary class="hastakala-support-faq__question">
+              <span>Can I request a custom commission?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                Yes. Share your idea, preferred materials, size, colour palette,
+                budget, and timeline through the enquiry form. Our team will
+                connect you with a suitable artisan.
+              </p>
+            </div>
+          </details>
+
+          <details class="hastakala-support-faq__item">
+            <summary class="hastakala-support-faq__question">
+              <span>How can I collaborate with Hastakala?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                We welcome collaborations with designers, retailers, hotels,
+                institutions, and creative brands. Send us a short introduction
+                and project details through the contact form.
+              </p>
+            </div>
+          </details>
+          <details class="hastakala-support-faq__item">
+            <summary class="hastakala-support-faq__question">
+              <span>Do you offer studio visits or workshops?</span>
+              <span class="hastakala-support-faq__icon">
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </span>
+            </summary>
+
+            <div class="hastakala-support-faq__answer">
+              <p>
+                Yes. You can visit the studio to explore handmade collections
+                and meet the artisans. For group visits, workshops, or a
+                scheduled artisan appointment, please contact us in advance.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <a
+              href="index.html"
+              class="logo-icon-link"
+              aria-label="Hastakala Home"
+            >
+              <img
+                src="./images/logo.png"
+                alt="Hastakala Logo"
+                class="brand-logo"
+                id="footerLogo"
+              />
+            </a>
+
+            <span class="logo-divider footer-logo-divider"></span>
+
+            <a href="index.html" class="brand-content footer-branding">
+              <h2 class="brand-name">
+                <span class="thread">HASTA</span><span class="mark">KALA</span>
+              </h2>
+
+              <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+            </a>
+          </div>
+
+          <p class="footer-about">
+            Hastakala celebrates the art of handmade living with curated
+            handicrafts and home decor. Each piece tells a story of skill,
+            tradition, and thoughtful design for modern spaces.
+          </p>
+
+          <div class="social">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Studio</a>
+            </li>
+
+            <li>
+              <a href="artisans.html">Artisans</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Shop</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="products.html">Handicrafts</a>
+            </li>
+
+            <li>
+              <a href="products.html">Home Decor</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Room</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Material</a>
+            </li>
+
+            <li>
+              <a href="products.html">New Arrivals</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Studio &amp; Services</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="studio.html">Custom Design Studio</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Interior Consultation</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Bulk &amp; Corporate Gifting</a>
+            </li>
+
+            <li>
+              <a href="404.html">404 page </a>
+            </li>
+
+            <li>
+              <a href="comming.html">upcomming</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+
+          <ul class="contact">
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </span>
+
+              <span>Hyderabad, Telangana</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="phone" aria-hidden="true"></i>
+              </span>
+
+              <span>+91 98765 43210</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="mail" aria-hidden="true"></i>
+              </span>
+
+              <span>hello@hastakala.com</span>
+            </li>
+          </ul>
+
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
+            <span>Request a Quote</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Hastakala. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+
+          <a href="terms.html">Terms &amp; Conditions</a>
+
+          <a href="#" class="top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="./main/main.js"></script>
+    <script>
+      const contactEnquiryForm = document.getElementById("contactEnquiryForm");
+      const contactFormSuccess = document.getElementById("contactFormSuccess");
+
+      if (contactEnquiryForm && contactFormSuccess) {
+        contactEnquiryForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          contactFormSuccess.hidden = false;
+          contactEnquiryForm.reset();
+
+          contactFormSuccess.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
+        });
+      }
+      const supportFaqAccordion = document.getElementById(
+        "supportFaqAccordion",
+      );
+
+      if (supportFaqAccordion) {
+        const faqItems = supportFaqAccordion.querySelectorAll(
+          ".hastakala-support-faq__item",
+        );
+
+        faqItems.forEach((item) => {
+          item.addEventListener("toggle", function () {
+            if (!item.open) {
+              return;
+            }
+
+            faqItems.forEach((otherItem) => {
+              if (otherItem !== item && otherItem.open) {
+                otherItem.open = false;
+              }
+            });
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

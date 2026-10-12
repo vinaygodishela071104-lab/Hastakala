@@ -1,0 +1,1568 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hastakala – Handicraft & Home Decor Store featuring artisanal collections, curated products, and custom design services."
+    />
+    <meta
+      name="keywords"
+      content="Hastakala, handicraft, home decor, artisan, handmade, custom design, home styling"
+    />
+    <meta name="author" content="Hastakala" />
+    <meta name="theme-color" content="#06273A" />
+    <title>Hastakala | Handicraft & Home Decor |Products page</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+
+  <body data-root="./">
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html" class="logo-icon-link" aria-label="Hastakala Home">
+          <img
+            src="./images/logo2.png"
+            alt="Hastakala Logo"
+            class="brand-logo"
+            id="headerLogo"
+          />
+        </a>
+
+        <span class="logo-divider"></span>
+
+        <a href="index.html" class="brand-content">
+          <h1 class="brand-name">
+            <span class="thread">HASTA</span><span class="mark">KALA</span>
+          </h1>
+
+          <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+        </a>
+      </div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="dropdown">
+            <a
+              href="index.html"
+              class="dropdown-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html">Home 1</a>
+              </li>
+
+              <li>
+                <a href="home2.html">Home 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+
+          <li>
+            <a href="studio.html">Studio</a>
+          </li>
+
+          <li>
+            <a href="artisans.html">Artisans</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-quote">
+          <a href="contact.html#contact-form" class="btn-primary">
+            <i data-lucide="message-circle"></i>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="buttons">
+        <button
+          class="icon-btn rtl-btn"
+          id="rtlToggle"
+          type="button"
+          title="RTL Mode"
+          aria-label="Toggle RTL mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          class="icon-btn dark-btn"
+          id="darkToggle"
+          type="button"
+          title="Dark Mode"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <a href="contact.html#contact-form" class="btn-primary desktop-quote">
+          <i data-lucide="message-circle"></i>
+          <span>Get in Touch</span>
+        </a>
+
+        <button
+          class="icon-btn menu-btn"
+          id="menuToggle"
+          type="button"
+          title="Menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+    <section
+      class="hastakala-products-hero"
+      aria-labelledby="productsHeroTitle"
+    >
+      <div class="hastakala-products-hero__inner">
+        <div class="hastakala-products-hero__content">
+          <div class="hastakala-hero__eyebrow hastakala-products-hero__eyebrow">
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text"
+              >THE HASTAKALA COLLECTION</span
+            >
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h1 class="hastakala-products-hero__title" id="productsHeroTitle">
+            Handcrafted pieces
+            <span>for every corner.</span>
+          </h1>
+
+          <p class="hastakala-products-hero__description">
+            Explore décor, tableware, lighting, and thoughtful handmade details
+            selected to bring character into your home.
+          </p>
+
+          <div class="hastakala-products-hero__categories">
+            <a class="hastakala-products-hero__category" href="#products">
+              <i data-lucide="flower-2" aria-hidden="true"></i>
+              <span>Décor</span>
+            </a>
+
+            <a class="hastakala-products-hero__category" href="#products">
+              <i data-lucide="utensils" aria-hidden="true"></i>
+              <span>Tableware</span>
+            </a>
+
+            <a class="hastakala-products-hero__category" href="#products">
+              <i data-lucide="lamp" aria-hidden="true"></i>
+              <span>Lighting</span>
+            </a>
+
+            <a class="hastakala-products-hero__category" href="#products">
+              <i data-lucide="shapes" aria-hidden="true"></i>
+              <span>Wall Art</span>
+            </a>
+          </div>
+
+          <div class="hastakala-products-hero__actions">
+            <a class="btn-primary" href="#products">
+              Browse all products
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a class="btn-secondary" href="contact.html">
+              Custom enquiry
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hastakala-products-hero__note">
+            <span
+              class="hastakala-products-hero__note-line"
+              aria-hidden="true"
+            ></span>
+            <p>Handmade details for lived-in spaces</p>
+          </div>
+        </div>
+
+        <figure class="hastakala-products-hero__visual">
+          <img
+            class="hastakala-products-hero__image"
+            src="./images/hastakala-editorial-interior.png"
+            alt="Styled interior featuring handcrafted décor, tableware, and lighting"
+            fetchpriority="high"
+          />
+
+          <figcaption class="hastakala-products-hero__caption">
+            <span>HASTAKALA</span>
+            <span>Objects with character · Spaces with soul</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section
+      class="hastakala-products-listing"
+      id="products"
+      aria-labelledby="productsListingTitle"
+    >
+      <div class="hastakala-products-listing__inner">
+        <div class="hastakala-products-listing__top">
+          <div
+            class="hastakala-hero__eyebrow hastakala-products-listing__eyebrow"
+          >
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">FILTER & DISCOVER</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2
+            class="hastakala-products-listing__title"
+            id="productsListingTitle"
+          >
+            Find pieces that
+            <span>feel like home.</span>
+          </h2>
+
+          <p class="hastakala-products-listing__description">
+            Browse handcrafted décor, tableware, lighting, and thoughtful gifts.
+            Use the filters to narrow the collection by category, material,
+            price, and availability.
+          </p>
+        </div>
+
+        <div class="hastakala-products-listing__layout">
+          <aside
+            class="hastakala-products-filters"
+            id="productsFilters"
+            aria-labelledby="productsFiltersTitle"
+          >
+            <div class="hastakala-products-filters__header">
+              <h3
+                class="hastakala-products-filters__title"
+                id="productsFiltersTitle"
+              >
+                Filters
+              </h3>
+
+              <button
+                class="hastakala-products-filters__close"
+                type="button"
+                aria-label="Close filters"
+              >
+                <i data-lucide="x" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="hastakala-products-filters__group">
+              <h4 class="hastakala-products-filters__group-title">Category</h4>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="category" value="decor" />
+                <span>Décor</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="category"
+                  value="tableware"
+                />
+                <span>Tableware</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="category"
+                  value="wall-art"
+                />
+                <span>Wall Art</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="category"
+                  value="lighting"
+                />
+                <span>Lighting</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="category"
+                  value="textiles"
+                />
+                <span>Textiles</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="category" value="storage" />
+                <span>Storage</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="category" value="gifts" />
+                <span>Gifts</span>
+              </label>
+            </div>
+
+            <div class="hastakala-products-filters__group">
+              <h4 class="hastakala-products-filters__group-title">Material</h4>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="material" value="wood" />
+                <span>Wood</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="material" value="clay" />
+                <span>Clay</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="material"
+                  value="natural-fibre"
+                />
+                <span>Natural Fibre</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="material" value="metal" />
+                <span>Metal</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input type="checkbox" data-filter="material" value="textile" />
+                <span>Textile</span>
+              </label>
+            </div>
+
+            <div class="hastakala-products-filters__group">
+              <h4 class="hastakala-products-filters__group-title">Price</h4>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="radio"
+                  name="price"
+                  data-filter="price"
+                  value="under-1500"
+                />
+                <span>Under ₹1,500</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="radio"
+                  name="price"
+                  data-filter="price"
+                  value="1500-3000"
+                />
+                <span>₹1,500 – ₹3,000</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="radio"
+                  name="price"
+                  data-filter="price"
+                  value="3000-5000"
+                />
+                <span>₹3,000 – ₹5,000</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="radio"
+                  name="price"
+                  data-filter="price"
+                  value="above-5000"
+                />
+                <span>Above ₹5,000</span>
+              </label>
+            </div>
+
+            <div class="hastakala-products-filters__group">
+              <h4 class="hastakala-products-filters__group-title">
+                Availability
+              </h4>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="availability"
+                  value="in-stock"
+                />
+                <span>In stock</span>
+              </label>
+
+              <label class="hastakala-products-filter">
+                <input
+                  type="checkbox"
+                  data-filter="availability"
+                  value="made-to-order"
+                />
+                <span>Made to order</span>
+              </label>
+            </div>
+
+            <div class="hastakala-products-filters__actions">
+              <button class="btn-secondary" type="button" id="clearFilters">
+                Clear all
+              </button>
+            </div>
+          </aside>
+
+          <div class="hastakala-products-listing__main">
+            <div class="hastakala-products-listing__toolbar">
+              <button
+                class="hastakala-products-listing__filter-toggle"
+                type="button"
+                aria-controls="productsFilters"
+                aria-expanded="false"
+              >
+                <i data-lucide="sliders-horizontal" aria-hidden="true"></i>
+                <span>Filters</span>
+              </button>
+
+              <p
+                class="hastakala-products-listing__count"
+                id="productsResultCount"
+                role="status"
+              >
+                Showing <strong>12</strong> pieces
+              </p>
+
+              <div class="hastakala-products-listing__sort">
+                <label
+                  class="hastakala-products-listing__sort-label"
+                  for="productsSort"
+                >
+                  Sort by
+                </label>
+
+                <div class="hastakala-products-listing__sort-field">
+                  <select id="productsSort" name="sort">
+                    <option value="featured">Featured</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                  </select>
+
+                  <i data-lucide="chevron-down" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="hastakala-products-listing__grid" id="productsGrid">
+              <article
+                class="hastakala-product-card"
+                data-category="decor"
+                data-material="clay"
+                data-price="1500-3000"
+                data-availability="in-stock"
+                data-created="5"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-clay-vase.jpg"
+                    alt="Handcrafted ceramic vase with a natural clay finish"
+                    loading="lazy"
+                  />
+                  <span class="hastakala-product-card__badge">New</span>
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Décor</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="products.html">Terra Clay Vase</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Hand-shaped clay vase with a warm, tactile finish.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,850</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="storage"
+                data-material="natural-fibre"
+                data-price="1500-3000"
+                data-availability="in-stock"
+                data-created="4"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-woven-basket.jpg"
+                    alt="Handwoven natural fibre basket with a woven texture"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Storage</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Woven Storage Basket</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Natural fibre basket with a soft, structured weave.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹2,250</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Woven Storage Basket"
+                  >
+                    Buy Now
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="tableware"
+                data-material="wood"
+                data-price="under-1500"
+                data-availability="in-stock"
+                data-created="3"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-3.jpg"
+                    alt="Handcrafted wooden serving bowl with visible grain"
+                    loading="lazy"
+                  />
+                  <span class="hastakala-product-card__badge">Bestseller</span>
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Tableware</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Grain Wood Bowl</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Smooth wooden serving bowl with natural grain detail.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,350</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="wall-art"
+                data-material="metal"
+                data-price="3000-5000"
+                data-availability="made-to-order"
+                data-created="2"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-4.png"
+                    alt="Handmade metal wall art with a warm brass finish"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Wall Art</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Brass Relief Panel</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Textured metal panel with a warm hand-finished surface.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹4,800</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="lighting"
+                data-material="natural-fibre"
+                data-price="3000-5000"
+                data-availability="in-stock"
+                data-created="6"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-5.jpg"
+                    alt="Handcrafted table lamp with a woven shade"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Lighting</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Woven Glow Lamp</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Table lamp with a woven shade and warm ambient light.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹3,450</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="textiles"
+                data-material="textile"
+                data-price="1500-3000"
+                data-availability="made-to-order"
+                data-created="1"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-6.jpg"
+                    alt="Handwoven textile cushion with a natural texture"
+                    loading="lazy"
+                  />
+                  <span class="hastakala-product-card__badge"
+                    >Made to order</span
+                  >
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Textiles</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Loom Cushion</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Handwoven cushion with a soft, layered texture.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,950</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="decor"
+                data-material="wood"
+                data-price="under-1500"
+                data-availability="in-stock"
+                data-created="7"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-7.jpg"
+                    alt="Small handcrafted wooden decorative object"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Décor</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Carved Wood Accent</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    A compact wooden accent with subtle carved detailing.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,250</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="gifts"
+                data-material="clay"
+                data-price="under-1500"
+                data-availability="in-stock"
+                data-created="8"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-8.jpg"
+                    alt="Handcrafted clay gift set with a natural finish"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Gifts</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="products.html">Clay Gift Duo</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    A pair of small clay pieces, ideal for thoughtful gifting.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,150</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Terra Clay Vase"
+                  >
+                    <span>Buy Now</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="gifts"
+                data-material="metal"
+                data-price="above-5000"
+                data-availability="made-to-order"
+                data-created="9"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-9.jpg"
+                    alt="Handcrafted brass decorative gift piece"
+                    loading="lazy"
+                  />
+                  <span class="hastakala-product-card__badge">Limited</span>
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Gifts</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Brass Keepsake</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    A refined brass keepsake with a hand-finished surface.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹5,600</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Grain Wood Bowl"
+                  >
+                    Buy Now
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="tableware"
+                data-material="clay"
+                data-price="1500-3000"
+                data-availability="made-to-order"
+                data-created="10"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="products.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-10.jpg"
+                    alt="Handcrafted clay dinner plates with a matte finish"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Tableware</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Clay Table Set</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    Hand-finished clay plates with a calm, natural surface.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹2,650</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Grain Wood Bowl"
+                  >
+                    Buy Now
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="decor"
+                data-material="natural-fibre"
+                data-price="under-1500"
+                data-availability="in-stock"
+                data-created="11"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-11.jpg"
+                    alt="Handwoven natural fibre decorative wall hanging"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Décor</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Fibre Wall Hanging</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    A woven wall piece with soft texture and natural rhythm.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹1,450</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Grain Wood Bowl"
+                  >
+                    Buy Now
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="hastakala-product-card"
+                data-category="gifts"
+                data-material="textile"
+                data-price="3000-5000"
+                data-availability="made-to-order"
+                data-created="12"
+              >
+                <a
+                  class="hastakala-product-card__image-link"
+                  href="contact.html"
+                >
+                  <img
+                    class="hastakala-product-card__image"
+                    src="./images/product-12.jpg"
+                    alt="Handwoven textile gift set with layered textures"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="hastakala-product-card__details">
+                  <p class="hastakala-product-card__category">Gifts</p>
+                  <h3 class="hastakala-product-card__name">
+                    <a href="contact.html">Loom Gift Set</a>
+                  </h3>
+                  <p class="hastakala-product-card__description">
+                    A curated textile gift set with soft, layered details.
+                  </p>
+                </div>
+
+                <div class="hastakala-product-card__footer">
+                  <p class="hastakala-product-card__price">₹3,850</p>
+
+                  <a
+                    class="hastakala-product-card__action"
+                    href="contact.html"
+                    aria-label="Buy Grain Wood Bowl"
+                  >
+                    Buy Now
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div
+              class="hastakala-products-listing__empty"
+              id="productsEmpty"
+              hidden
+            >
+              <p>No pieces match the selected filters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-featured-edit"
+      id="featured-edit"
+      aria-labelledby="featuredEditTitle"
+    >
+      <div class="hastakala-featured-edit__inner">
+        <div class="hastakala-featured-edit__grid">
+          <div class="hastakala-featured-edit__media">
+            <div class="hastakala-featured-edit__image-frame">
+              <img
+                class="hastakala-featured-edit__image"
+                src="./images/featured-edit.jpg"
+                alt="Handcrafted ceramic and woven home pieces arranged on a warm neutral surface"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="hastakala-featured-edit__tag">
+              <span>Seasonal Edit</span>
+            </div>
+          </div>
+
+          <div class="hastakala-featured-edit__content">
+            <div
+              class="hastakala-hero__eyebrow hastakala-featured-edit__eyebrow"
+            >
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+                aria-hidden="true"
+              ></span>
+              <span class="hastakala-hero__eyebrow-text">FEATURED EDIT</span>
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <h2 class="hastakala-featured-edit__title" id="featuredEditTitle">
+              The Quiet
+              <span>Clay Collection.</span>
+            </h2>
+
+            <p class="hastakala-featured-edit__text">
+              Inspired by slow mornings and sunlit corners, this edit brings
+              together hand-shaped ceramics, woven textures, and warm wooden
+              accents. Each piece is made in small batches, carrying the subtle
+              marks of the maker’s hands.
+            </p>
+
+            <ul class="hastakala-featured-edit__points">
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Small-batch handmade pieces</span>
+              </li>
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Natural clay, wood, and fibre materials</span>
+              </li>
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Designed for calm, lived-in spaces</span>
+              </li>
+            </ul>
+
+            <div class="hastakala-featured-edit__actions">
+              <a class="btn-primary" href="products.html">
+                Explore the edit
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a class="btn-secondary" href="products.html">
+                View signature piece
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-product-care"
+      id="product-care"
+      aria-labelledby="productCareTitle"
+    >
+      <div class="hastakala-product-care__inner">
+        <div class="hastakala-product-care__header">
+          <div class="hastakala-hero__eyebrow hastakala-product-care__eyebrow">
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+              aria-hidden="true"
+            ></span>
+            <span class="hastakala-hero__eyebrow-text">CARE & DETAILS</span>
+            <span
+              class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+              aria-hidden="true"
+            ></span>
+          </div>
+
+          <h2 class="hastakala-product-care__title" id="productCareTitle">
+            Made carefully.
+            <span>Made to last.</span>
+          </h2>
+
+          <p class="hastakala-product-care__description">
+            Every piece is created with natural materials and careful handwork.
+            Here is what you need to know before it arrives at your home.
+          </p>
+        </div>
+
+        <div class="hastakala-product-care__strip">
+          <div class="hastakala-product-care__item">
+            <div class="hastakala-product-care__icon-wrap">
+              <i data-lucide="leaf" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-product-care__content">
+              <h3 class="hastakala-product-care__item-title">Materials</h3>
+
+              <p class="hastakala-product-care__item-text">
+                Handcrafted using natural clay, responsibly sourced wood, metal,
+                and natural fibres. Slight variations in tone, grain, and
+                texture are part of each handmade piece.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-product-care__item">
+            <div class="hastakala-product-care__icon-wrap">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-product-care__content">
+              <h3 class="hastakala-product-care__item-title">Care</h3>
+
+              <p class="hastakala-product-care__item-text">
+                Wipe gently with a soft, dry cloth. Avoid harsh cleaners, direct
+                heat, and prolonged moisture. Keep wooden and fibre pieces away
+                from direct sunlight to preserve their natural finish.
+              </p>
+            </div>
+          </div>
+
+          <div class="hastakala-product-care__item">
+            <div class="hastakala-product-care__icon-wrap">
+              <i data-lucide="package-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="hastakala-product-care__content">
+              <h3 class="hastakala-product-care__item-title">
+                Shipping & Returns
+              </h3>
+
+              <p class="hastakala-product-care__item-text">
+                Orders are carefully packed and dispatched within 3–5 working
+                days. Made-to-order pieces may require additional production
+                time. Returns are accepted within 7 days for unused items in
+                original packaging.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-help-choose"
+      id="need-help"
+      aria-labelledby="helpChooseTitle"
+    >
+      <div class="hastakala-help-choose__inner">
+        <div class="hastakala-help-choose__grid">
+          <div class="hastakala-help-choose__content">
+            <div class="hastakala-hero__eyebrow hastakala-help-choose__eyebrow">
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+                aria-hidden="true"
+              ></span>
+              <span class="hastakala-hero__eyebrow-text"
+                >NEED HELP CHOOSING?</span
+              >
+              <span
+                class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <h2 class="hastakala-help-choose__title" id="helpChooseTitle">
+              Let’s find the right
+              <span>piece for your space.</span>
+            </h2>
+
+            <p class="hastakala-help-choose__text">
+              Choosing handmade pieces should feel personal. Share your space,
+              occasion, or idea, and our studio team will help you select a
+              piece, plan a custom order, or discuss bulk and gifting enquiries.
+            </p>
+
+            <ul class="hastakala-help-choose__list">
+              <li>
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                <span>Personal product recommendations</span>
+              </li>
+              <li>
+                <i data-lucide="hammer" aria-hidden="true"></i>
+                <span>Custom and made-to-order requests</span>
+              </li>
+              <li>
+                <i data-lucide="gift" aria-hidden="true"></i>
+                <span>Bulk, corporate, and gifting enquiries</span>
+              </li>
+            </ul>
+
+            <div class="hastakala-help-choose__actions">
+              <a class="btn-primary" href="contact.html">
+                Send an enquiry
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a class="btn-secondary" href="contact.html">
+                View contact details
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hastakala-help-choose__media">
+            <div class="hastakala-help-choose__image-frame">
+              <img
+                class="hastakala-help-choose__image"
+                src="./images/studio-support.jpg"
+                alt="Maker arranging handcrafted ceramic pieces in a warm studio space"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="hastakala-help-choose__support-card">
+              <div class="hastakala-help-choose__support-icon">
+                <i data-lucide="headset" aria-hidden="true"></i>
+              </div>
+
+              <div class="hastakala-help-choose__support-details">
+                <p class="hastakala-help-choose__support-label">
+                  Studio support
+                </p>
+                <p class="hastakala-help-choose__support-text">
+                  Mon–Sat, 10 AM–6 PM IST
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="hastakala-help-choose__accent-shape"
+              aria-hidden="true"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="hastakala-final-cta"
+      id="final-cta"
+      aria-labelledby="finalCtaTitle"
+    >
+      <img
+        class="hastakala-final-cta__background"
+        src="./images/final-cta-background.jpg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+      />
+
+      <div class="hastakala-final-cta__overlay" aria-hidden="true"></div>
+
+      <div class="hastakala-final-cta__inner">
+        <div class="hastakala-hero__eyebrow hastakala-final-cta__eyebrow">
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--left"
+            aria-hidden="true"
+          ></span>
+          <span class="hastakala-hero__eyebrow-text">BRING IT HOME</span>
+          <span
+            class="hastakala-hero__eyebrow-line hastakala-hero__eyebrow-line--right"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <h2 class="hastakala-final-cta__title" id="finalCtaTitle">
+          Find a piece that
+          <span>feels like yours.</span>
+        </h2>
+
+        <p class="hastakala-final-cta__text">
+          Explore handcrafted décor, tableware, lighting, and gifts made in
+          small batches for calm, considered spaces.
+        </p>
+
+        <div class="hastakala-final-cta__actions">
+          <a class="btn-primary" href="products.html">
+            Shop the collection
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="btn-secondary" href="contact.html">
+            Talk to the studio
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <a
+              href="index.html"
+              class="logo-icon-link"
+              aria-label="Hastakala Home"
+            >
+              <img
+                src="./images/logo.png"
+                alt="Hastakala Logo"
+                class="brand-logo"
+                id="footerLogo"
+              />
+            </a>
+
+            <span class="logo-divider footer-logo-divider"></span>
+
+            <a href="index.html" class="brand-content footer-branding">
+              <h2 class="brand-name">
+                <span class="thread">HASTA</span><span class="mark">KALA</span>
+              </h2>
+
+              <span class="subtitle-text"> HANDICRAFT &amp; HOME DECOR </span>
+            </a>
+          </div>
+
+          <p class="footer-about">
+            Hastakala celebrates the art of handmade living with curated
+            handicrafts and home decor. Each piece tells a story of skill,
+            tradition, and thoughtful design for modern spaces.
+          </p>
+
+          <div class="social">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Studio</a>
+            </li>
+
+            <li>
+              <a href="artisans.html">Artisans</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Shop</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="products.html">Handicrafts</a>
+            </li>
+
+            <li>
+              <a href="products.html">Home Decor</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Room</a>
+            </li>
+
+            <li>
+              <a href="products.html">By Material</a>
+            </li>
+
+            <li>
+              <a href="products.html">New Arrivals</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Studio &amp; Services</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="studio.html">Custom Design Studio</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Interior Consultation</a>
+            </li>
+
+            <li>
+              <a href="studio.html">Bulk &amp; Corporate Gifting</a>
+            </li>
+
+            <li>
+              <a href="404.html">404 page </a>
+            </li>
+
+            <li>
+              <a href="comming.html">upcomming</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+
+          <ul class="contact">
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </span>
+
+              <span>Hyderabad, Telangana</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="phone" aria-hidden="true"></i>
+              </span>
+
+              <span>+91 98765 43210</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="mail" aria-hidden="true"></i>
+              </span>
+
+              <span>hello@hastakala.com</span>
+            </li>
+          </ul>
+
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
+            <span>Request a Quote</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Hastakala. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+
+          <a href="terms.html">Terms &amp; Conditions</a>
+
+          <a href="#" class="top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="./main/main.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>

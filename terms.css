@@ -1,0 +1,538 @@
+.hastakala-terms {
+  position: relative;
+  min-height: 100vh;
+  padding: 84px 24px 72px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(186, 132, 87, 0.07),
+      transparent 32rem
+    ),
+    var(--background);
+  color: var(--text);
+}
+
+.hastakala-terms__preferences {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hastakala-terms__toggle {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-round);
+  background: var(--surface);
+  color: var(--primary);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hastakala-terms__toggle:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.hastakala-terms__toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.hastakala-terms__header {
+  width: min(840px, 100%);
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.hastakala-terms__logo {
+  display: flex;
+  width: fit-content;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 38px;
+}
+
+.hastakala-terms__logo .logo-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hastakala-terms__logo .brand-logo {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.hastakala-terms__logo .logo-divider {
+  width: 1px;
+  height: 44px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--secondary) 20%,
+    var(--secondary) 80%,
+    transparent 100%
+  );
+}
+
+.hastakala-terms__logo .brand-content {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hastakala-terms__logo .brand-name {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.7px;
+  white-space: nowrap;
+}
+
+.hastakala-terms__logo .brand-name .thread {
+  color: var(--primary);
+}
+
+.hastakala-terms__logo .brand-name .mark {
+  color: var(--secondary);
+}
+
+.hastakala-terms__logo .subtitle-text {
+  margin-top: 8px;
+  color: var(--primary);
+  font-family: var(--body-font);
+  font-size: 7px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.hastakala-terms__eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 16px;
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.hastakala-terms__eyebrow-line {
+  display: block;
+  width: 30px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--secondary);
+}
+
+.hastakala-terms__title {
+  margin: 0 0 14px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: var(--heading-font-weight);
+  line-height: 1.2;
+}
+
+.hastakala-terms__intro {
+  max-width: 640px;
+  margin: 0 auto 14px;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.hastakala-terms__updated {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.hastakala-terms__updated time {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.hastakala-terms__layout {
+  position: relative;
+  display: grid;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  grid-template-columns: minmax(220px, 0.32fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
+}
+
+.hastakala-terms__sidebar {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  transform: none;
+  width: auto;
+  min-width: 0;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  z-index: 2;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+}
+
+.hastakala-terms__sidebar-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 16px;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.hastakala-terms__sidebar-heading svg {
+  width: 17px;
+  height: 17px;
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.hastakala-terms__sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hastakala-terms__sidebar nav a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: var(--transition);
+}
+
+.hastakala-terms__sidebar nav a:hover {
+  background: var(--surface-alt);
+  color: var(--secondary);
+}
+
+.hastakala-terms__article {
+  grid-column: 2;
+  min-width: 0;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.hastakala-terms__section {
+  position: relative;
+  padding: 0 0 28px;
+  margin: 0 0 28px;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 24px;
+}
+
+.hastakala-terms__section:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 28px;
+  border-bottom: 0;
+}
+
+.hastakala-terms__section-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1px solid rgba(186, 132, 87, 0.28);
+  border-radius: var(--radius-round);
+  background: rgba(186, 132, 87, 0.08);
+  color: var(--secondary);
+}
+
+.hastakala-terms__section-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.hastakala-terms__section h3 {
+  margin: 0 0 12px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.hastakala-terms__section p,
+.hastakala-terms__section li {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.hastakala-terms__section p + p {
+  margin-top: 10px;
+}
+
+.hastakala-terms__section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.hastakala-terms__section li {
+  padding-left: 3px;
+}
+
+.hastakala-terms__section li::marker {
+  color: var(--secondary);
+}
+
+.hastakala-terms__section a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(186, 132, 87, 0.45);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.hastakala-terms__section a:hover {
+  color: var(--secondary);
+}
+
+.hastakala-terms__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(186, 132, 87, 0.28);
+  border-radius: var(--radius-md);
+  background: rgba(186, 132, 87, 0.07);
+}
+
+.hastakala-terms__notice svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--secondary);
+}
+
+.hastakala-terms__notice p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.hastakala-terms__toggle:focus-visible,
+.hastakala-terms__sidebar a:focus-visible,
+.hastakala-terms__section a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+body.dark-mode .hastakala-terms__toggle {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--white);
+}
+
+body.dark-mode .hastakala-terms__logo .brand-name .thread,
+body.dark-mode .hastakala-terms__logo .subtitle-text {
+  color: var(--white);
+}
+
+body.dark-mode .hastakala-terms__title,
+body.dark-mode .hastakala-terms__sidebar-heading,
+body.dark-mode .hastakala-terms__section h3,
+body.dark-mode .hastakala-terms__updated time,
+body.dark-mode .hastakala-terms__section a {
+  color: var(--white);
+}
+
+body.dark-mode .hastakala-terms__intro,
+body.dark-mode .hastakala-terms__updated,
+body.dark-mode .hastakala-terms__section p,
+body.dark-mode .hastakala-terms__section li,
+body.dark-mode .hastakala-terms__sidebar nav a,
+body.dark-mode .hastakala-terms__notice p {
+  color: var(--muted);
+}
+
+body.dark-mode .hastakala-terms__sidebar,
+body.dark-mode .hastakala-terms__article {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+body.dark-mode .hastakala-terms__sidebar nav a:hover {
+  background: var(--surface-alt);
+  color: var(--secondary);
+}
+
+body.dark-mode .hastakala-terms__section {
+  border-bottom-color: var(--border);
+}
+
+body.dark-mode .hastakala-terms__notice {
+  border-color: rgba(186, 132, 87, 0.3);
+  background: rgba(186, 132, 87, 0.08);
+}
+
+html[dir="rtl"] .hastakala-terms__preferences {
+  right: auto;
+  left: 24px;
+}
+
+html[dir="rtl"] .hastakala-terms__sidebar nav a {
+  text-align: right;
+}
+
+html[dir="rtl"] .hastakala-terms__section ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .hastakala-terms__section li {
+  padding-right: 3px;
+  padding-left: 0;
+}
+
+@media (max-width: 800px) {
+  .hastakala-terms {
+    padding-top: 84px;
+  }
+
+  .hastakala-terms__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .hastakala-terms__sidebar {
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow: visible;
+    transform: none;
+    width: auto;
+  }
+
+  .hastakala-terms__article {
+    grid-column: 1;
+  }
+
+  .hastakala-terms__sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .hastakala-terms {
+    padding: 88px 18px 48px;
+  }
+
+  .hastakala-terms__preferences {
+    top: 16px;
+    right: 16px;
+  }
+
+  html[dir="rtl"] .hastakala-terms__preferences {
+    right: auto;
+    left: 16px;
+  }
+
+  .hastakala-terms__logo {
+    gap: 9px;
+    margin-bottom: 30px;
+  }
+
+  .hastakala-terms__logo .brand-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hastakala-terms__logo .brand-name {
+    font-size: 23px;
+  }
+
+  .hastakala-terms__logo .subtitle-text {
+    font-size: 6px;
+    letter-spacing: 0.7px;
+  }
+
+  .hastakala-terms__header {
+    margin-bottom: 32px;
+  }
+
+  .hastakala-terms__eyebrow {
+    gap: 9px;
+    font-size: 0.62rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hastakala-terms__eyebrow-line {
+    width: 20px;
+  }
+
+  .hastakala-terms__sidebar {
+    padding: 18px;
+  }
+
+  .hastakala-terms__sidebar nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hastakala-terms__article {
+    padding: 22px 18px;
+  }
+
+  .hastakala-terms__section h3 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hastakala-terms__toggle,
+  .hastakala-terms__sidebar nav a {
+    transition: none;
+  }
+}
