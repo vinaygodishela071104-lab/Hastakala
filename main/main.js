@@ -12,16 +12,12 @@ function createLucideIcons(root = document) {
 }
 
 function setLucideIcon(element, iconName) {
-  if (!element) {
-    return;
-  }
+  if (!element) return;
 
   element.replaceChildren();
 
   const icon = document.createElement("i");
-
   icon.setAttribute("data-lucide", iconName);
-
   element.appendChild(icon);
 
   createLucideIcons(element);
@@ -30,7 +26,6 @@ function setLucideIcon(element, iconName) {
 function getStorageItem(key, fallback = null) {
   try {
     const value = localStorage.getItem(key);
-
     return value !== null ? value : fallback;
   } catch {
     return fallback;
@@ -64,7 +59,6 @@ function updateThemeLogos() {
   const footerLogo = document.getElementById("footerLogo");
 
   const isDark = document.body.classList.contains("dark-mode");
-
   const rootPath = document.body.dataset.root || "./";
 
   const logoPath = isDark
@@ -118,7 +112,6 @@ function updateToggleIcons() {
     setLucideIcon(darkToggle, isDark ? "sun" : "moon");
 
     darkToggle.title = isDark ? "Light Mode" : "Dark Mode";
-
     darkToggle.setAttribute(
       "aria-label",
       isDark ? "Switch to light mode" : "Switch to dark mode",
@@ -131,7 +124,6 @@ function updateToggleIcons() {
     setLucideIcon(menuToggle, isOpen ? "x" : "menu");
 
     menuToggle.title = isOpen ? "Close Menu" : "Menu";
-
     menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
   }
 }
@@ -169,7 +161,6 @@ function setupMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns) {
     const isOpen = navLinks.classList.toggle("active");
 
     menuToggle.setAttribute("aria-expanded", String(isOpen));
-
     menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
 
     menuToggle.title = isOpen ? "Close Menu" : "Menu";
@@ -184,9 +175,7 @@ function setupMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns) {
   navLinks.addEventListener("click", (event) => {
     const clickedLink = event.target.closest("a");
 
-    if (!clickedLink) {
-      return;
-    }
+    if (!clickedLink) return;
 
     const parentDropdown = clickedLink.closest(".dropdown");
 
@@ -206,9 +195,7 @@ function setupMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns) {
     mobileQuote.addEventListener("click", (event) => {
       const clickedLink = event.target.closest("a");
 
-      if (!clickedLink) {
-        return;
-      }
+      if (!clickedLink) return;
 
       if (window.innerWidth <= 1024) {
         closeMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns);
@@ -217,13 +204,8 @@ function setupMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns) {
   }
 
   document.addEventListener("click", (event) => {
-    if (window.innerWidth > 1024) {
-      return;
-    }
-
-    if (!navLinks.classList.contains("active")) {
-      return;
-    }
+    if (window.innerWidth > 1024) return;
+    if (!navLinks.classList.contains("active")) return;
 
     const header = document.querySelector(".site-header");
 
@@ -246,9 +228,7 @@ function closeMobileMenu(menuToggle, navLinks, mobileQuote, dropdowns) {
 
   if (menuToggle) {
     menuToggle.setAttribute("aria-expanded", "false");
-
     menuToggle.setAttribute("aria-label", "Open menu");
-
     menuToggle.title = "Menu";
 
     setLucideIcon(menuToggle, "menu");
@@ -275,16 +255,12 @@ function setupMobileDropdowns(dropdowns) {
 
     const dropdownMenu = dropdown.querySelector(".dropdown-menu");
 
-    if (!trigger || !dropdownMenu) {
-      return;
-    }
+    if (!trigger || !dropdownMenu) return;
 
     trigger.setAttribute("aria-expanded", "false");
 
     trigger.addEventListener("click", (event) => {
-      if (window.innerWidth > 1024) {
-        return;
-      }
+      if (window.innerWidth > 1024) return;
 
       event.preventDefault();
       event.stopPropagation();
@@ -344,28 +320,31 @@ function setActiveNavLink() {
   if (homePages.includes(currentPage)) {
     if (homeTrigger) {
       homeTrigger.classList.add("active");
-
-      homeTrigger.setAttribute("aria-current", "page");
     }
 
     navLinks.forEach((link) => {
       const href = link.getAttribute("href");
 
-      if (!href) {
+      if (!href || href === "#" || href.startsWith("javascript:")) {
         return;
       }
 
       try {
-        const linkPage = new URL(link.href, window.location.href).pathname
+        const linkPage = new URL(href, window.location.href).pathname
           .split("/")
           .pop()
           .toLowerCase();
 
         if (linkPage === currentPage) {
+          link.classList.add("active");
           link.setAttribute("aria-current", "page");
         }
       } catch {}
     });
+
+    if (homeTrigger) {
+      homeTrigger.classList.add("active");
+    }
 
     return;
   }
@@ -378,14 +357,13 @@ function setActiveNavLink() {
     }
 
     try {
-      const linkPage = new URL(link.href, window.location.href).pathname
+      const linkPage = new URL(href, window.location.href).pathname
         .split("/")
         .pop()
         .toLowerCase();
 
       if (linkPage === currentPage) {
         link.classList.add("active");
-
         link.setAttribute("aria-current", "page");
       }
     } catch {}
@@ -395,9 +373,7 @@ function setActiveNavLink() {
 function initializeBackToTop() {
   const topButton = document.querySelector(".top-btn");
 
-  if (!topButton) {
-    return;
-  }
+  if (!topButton) return;
 
   topButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -411,8 +387,11 @@ function initializeBackToTop() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const footerEmailForm = document.getElementById("footerEmailForm");
+
   const footerEmail = document.getElementById("footerEmail");
+
   const requestQuoteButton = document.getElementById("requestQuoteButton");
+
   const footerQuoteMessage = document.getElementById("footerQuoteMessage");
 
   if (

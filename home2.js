@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Bring a sense of calm into your space with tactile fibres, warm wood, and tones drawn from the earth.",
       image: "./images/mood-earthy.jpg",
       alt: "Earth-toned living room with natural wood, clay, and woven accents",
-      link: "collections/earthy.html",
+      link: "products.html",
     },
     {
       name: "Quiet Heritage",
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Create a space with a sense of history through enduring forms, artisan details, and a gentle nod to tradition.",
       image: "./images/mood-quiet-heritage.jpg",
       alt: "Timeless interior with carved wood, subtle brass, and heritage details",
-      link: "collections/quiet-heritage.html",
+      link: "products.html",
     },
     {
       name: "Modern Artisan",
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Pair clean, modern lines with the warmth and individuality of pieces shaped by skilled hands.",
       image: "./images/mood-modern-artisan.jpg",
       alt: "Modern interior styled with sculptural handmade decor",
-      link: "collections/modern-artisan.html",
+      link: "products.html",
     },
   ];
 
