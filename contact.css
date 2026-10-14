@@ -886,6 +886,78 @@ body.dark-mode .hastakala-contact-form__privacy {
   color: rgba(255, 255, 255, 0.6);
 }
 
+body.dark-mode .hastakala-contact-form__field select {
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #12384c;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+body.dark-mode .hastakala-contact-form__field select option {
+  color: #ffffff;
+  background-color: #12384c;
+}
+
+body.dark-mode .hastakala-contact-form__field select optgroup {
+  color: #ffffff;
+  background-color: #12384c;
+}
+
+body.dark-mode .hastakala-contact-form__field select:focus {
+  color: #ffffff;
+  background-color: #12384c;
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(186, 132, 87, 0.2);
+}
+
+body.dark-mode .hastakala-contact-form__field select option:checked {
+  color: #ffffff;
+  background-color: #24546a;
+}
+
+body.dark-mode .hastakala-contact-form__field select option:disabled {
+  color: #a9bbc5;
+  background-color: #12384c;
+}
+
+.hastakala-contact-form__field select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 44px 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-alt);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+body.dark-mode .hastakala-contact-form__field select {
+  color: #fff !important;
+  background-color: #12384c !important;
+  border-color: rgba(255, 255, 255, 0.22);
+  color-scheme: dark;
+}
+
+body.dark-mode .hastakala-contact-form__field select option {
+  color: #fff;
+  background-color: #12384c;
+}
+
+body.dark-mode .hastakala-contact-form__field select option:disabled {
+  color: #fff;
+  background-color: #12384c;
+}
+
 .hastakala-visit-studio {
   padding: clamp(52px, 6vw, 92px) 24px;
   background: var(--surface);
